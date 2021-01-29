@@ -4,7 +4,7 @@ var svgHeight = 700;
 var margin = {
     top: 20,
     right: 40,
-    bottom: 80,
+    bottom: 100,
     left: 100
   };
   
@@ -149,11 +149,11 @@ function updateToolTip(chosenXAxis, chosenYAxis, circlesGroup) {
     circlesGroup
       .on("mouseover", function(data) {
         toolTip.show(data);
-        })
+       })
       // on mouseout event
       .on("mouseout", function(data, index) {
         toolTip.hide(data);
-        });
+       });
   
     return circlesGroup;
   }
